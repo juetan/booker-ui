@@ -4,7 +4,7 @@
 
 ## 实践过程
 
-### 新建项目
+### 组件环境
 
 1. 新建文件夹
 
@@ -211,7 +211,7 @@ import JSXButton from "./JSXButton/index";
 createApp(JSXButton).mount("#app");
 ```
 
-#### 打包封装
+### 组件打包
 
 1. 新建`/src/entry.ts`文件
 
@@ -336,7 +336,7 @@ pnpm build
 </html>
 ```
 
-### 样式图标
+### 组件样式
 
 1. 安装`unocss`(样式库)和`@iconify-json/ic`(图标库)
 
