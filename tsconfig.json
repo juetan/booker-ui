@@ -4,8 +4,12 @@
     "declarationDir": "./dist/types",
     "jsx": "preserve",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "moduleResolution": "node"
   },
-  "include": ["./**/*.*", "./src/shims-vue.d.ts"],
+  "include": [
+    "./**/*.*",
+    "./src/shims-vue.d.ts",
+  ],
   "exclude": ["node_modules"]
 }

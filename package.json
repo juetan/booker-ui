@@ -6,15 +6,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.9",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "unocss": "^0.45.13",
     "vite": "^3.0.9",
+    "vitepress": "1.0.0-alpha.10",
+    "vitepress-theme-demoblock": "^1.4.2",
     "vue": "^3.2.37"
   }
 }
