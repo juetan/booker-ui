@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite UI Button Demo</title>
+  </head>
+  <body>
+    <h1>Single Import</h1>
+    <div id="app"></div>
+    <script type="module">
+      import {createApp} from 'vue/dist/vue.esm-bundler.js';
+      import {SFCButton, JSXButton, Button} from '../../dist/vite-ui.mjs';
+
+      createApp({
+        template: `<VButton/> <JSXButton/> <SFCButton/>`,
+      })
+        .component(SFCButton.name, SFCButton)
+        .component(JSXButton.name, JSXButton)
+        .component(Button.name, Button)
+        .mount('#app');
+    </script>
+  </body>
+</html>
