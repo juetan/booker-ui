@@ -1,4 +1,3 @@
-/// <reference types="vitest" />
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import jsx from "@vitejs/plugin-vue-jsx";
@@ -29,9 +28,9 @@ export default defineConfig({
   },
   test: {
     globals: true,
-    environment: 'happy-dom',
+    environment: "happy-dom",
     transformMode: {
-      web: [/.[tj]sx$/]
-    }
-  }
+      web: [/.[tj]sx$/],
+    },
+  },
 });

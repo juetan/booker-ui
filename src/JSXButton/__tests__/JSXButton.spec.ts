@@ -36,6 +36,11 @@ describe("color", () => {
         color: "red",
       },
     });
-    expect(wrapper.classes().map((v) => v.replace("\n", "")).includes("bg-red-500")).toBe(true);
+    expect(
+      wrapper
+        .classes()
+        .map((v) => v.replace("\n", ""))
+        .includes("bg-red-500")
+    ).toBe(true);
   });
 });

@@ -1,8 +1,8 @@
-import { defineComponent, h } from 'vue';
+import { defineComponent, h } from "vue";
 
 export default defineComponent({
-  name: 'VButton',
+  name: "VButton",
   render() {
-    return h('button', null, 'My Button')
-  }
-})
+    return h("button", null, "My Button");
+  },
+});

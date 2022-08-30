@@ -838,7 +838,100 @@ describe('Button', () => {
   }
 }
 ```
+5. 运行测试命令，查看测试结果
+```s
+pnpm test
+```
 
+### 代码规范
+1. 安装以下依赖，我也不太清楚干啥用的(虽然有别的方法，暂时先这样)
+```s
+pnpm i eslint -D
+# ESLint 专门解析 TypeScript 的解析器
+pnpm i @typescript-eslint/parser -D
+# 内置各种解析 TypeScript rules 插件
+pnpm i @typescript-eslint/eslint-plugin -D
+
+pnpm i eslint-formatter-pretty -D
+pnpm i eslint-plugin-json -D
+pnpm i eslint-plugin-prettier -D
+pnpm i eslint-plugin-vue -D
+pnpm i @vue/eslint-config-prettier -D
+pnpm i babel-eslint -D
+pnpm i prettier -D
+```
+2. 新建`/.eslintrc.cjs`文件，添加配置
+```js
+module.exports =   {
+  root: true,
+  env: {
+    browser: true,
+    es2020: true,
+    node: true,
+    jest: true
+  },
+  globals: {
+    ga: true,
+    chrome: true,
+    __DEV__: true
+  },
+  // 解析 .vue 文件
+  parser: 'vue-eslint-parser',
+  extends: [
+    'plugin:json/recommended',
+    'plugin:vue/vue3-essential',
+    'eslint:recommended',
+    '@vue/prettier'
+  ],
+  plugins: ['@typescript-eslint'],
+  parserOptions: {
+    parser: '@typescript-eslint/parser' // 解析 .ts 文件
+  },
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'prettier/prettier': 'error'
+  }
+}
+```
+3. 新建`/.eslintignore`文件，添加忽略文件
+```s
+*.sh
+node_modules
+lib
+coverage
+*.md
+*.scss
+*.woff
+*.ttf
+src/index.ts
+dist
+```
+4. 修改`/package.json`文件，添加检查和格式化脚本
+```json
+{
+  "scripts": {
+    "lint": "eslint --fix --ext .ts,.vue src",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.vue\"",
+  },
+}
+```
+5. 运行检查命令，查看检查结果
+```
+pnpm lint
+```
+6. 安装`husky`，用于定义`Git Hooks`
+```s
+pnpm i husky -D
+```
+7. 通过以下命令，添加脚本到`/package.json`文件中
+```s
+npm set-script prepare "husky install"
+```
+8. 添加Git声明周期钩子
+```s
+mkdir .husky && npx husky add .husky/pre-commit "pnpm lint"
+```
 ## 参考链接
 
 - [基于 Vite 的组件库工程化实战 - 掘金小册](https://juejin.cn/book/7117582869358182403)
