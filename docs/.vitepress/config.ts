@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
-import demoBlock from 'vitepress-theme-demoblock'
+import demoBlock from "vitepress-theme-demoblock";
 
 const config = defineConfig({
-  title: 'BookerUI组件文档',
+  title: "BookerUI组件文档",
   themeConfig: {
     sidebar: [
       {
@@ -13,8 +13,19 @@ const config = defineConfig({
             text: "通用组件",
             items: [{ text: "Button 按钮", link: "/components/" }],
           },
-          { text: "数据录入", link: "/input" },
-          { text: "数据展示", link: "/output" },
+          {
+            text: "实践过程",
+            items: [
+              { text: "组件环境", link: "/steps/01-env" },
+              { text: "组件开发", link: "/steps/02-dev" },
+              { text: "组件构建", link: "/steps/03-pkg" },
+              { text: "组件样式", link: "/steps/04-css" },
+              { text: "组件文档", link: "/steps/05-doc" },
+              { text: "组件测试", link: "/steps/06-tst" },
+              { text: "组件规范", link: "/steps/07-spe" },
+              { text: "组件发布", link: "/steps/08-dep" },
+            ],
+          },
           { text: "导航", link: "/nav" },
           { text: "反馈", link: "/feedback" },
           { text: "关于", link: "/about" },

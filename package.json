@@ -2,7 +2,7 @@
   "name": "booker-ui",
   "version": "0.1.5",
   "description": "A simple lib based on vite and vue!",
-  "homepage": "https://github.com/juetan/vite-ui-practice",
+  "homepage": "https://vite-ui-practice.vercel.app/",
   "repository": {
     "type": "git",
     "url": "https://github.com/juetan/vite-ui-practice"
