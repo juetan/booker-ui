@@ -10,11 +10,11 @@
 </p>
 
 <p align="center">
-![](https://img.shields.io/npm/l/booker-ui)
-![](https://img.shields.io/bundlephobia/min/booker-ui)
-![](https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/CI?label=test)
-![](https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/Publish%20Booker-UI%20To%20Npm)
-![](https://img.shields.io/npm/v/booker-ui)
+<img src="https://img.shields.io/npm/l/booker-ui" />
+<img src="https://img.shields.io/bundlephobia/min/booker-ui" />
+<img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/CI?label=test" />
+<img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/Publish%20Booker-UI%20To%20Npm" />
+<img src="https://img.shields.io/npm/v/booker-ui" />
 </p>
 
 ## 技术栈
