@@ -9,14 +9,14 @@ const config = defineConfig({
     socialLinks: [{ icon: "github", link: "https://github.com/juetan" }],
     nav: [
       { text: "首页", link: "/" },
-      { text: "快速开始", link: "/quick-start" },
+      { text: "快速开始", link: "/guide/quick-start" },
       { text: "Github", link: "https://github.com/juetan/booker-ui" },
     ],
     sidebar: [
       {
         text: "组件",
         items: [
-          { text: "⚡ 快速开始", link: "/quick-start" },
+          { text: "⚡ 快速开始", link: "/guide/quick-start" },
           {
             text: "📦 通用组件",
             items: [{ text: "Button 按钮", link: "/components/" }],
@@ -40,6 +40,10 @@ const config = defineConfig({
         ],
       },
     ],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present juetan'
+    }
   },
   markdown: {
     config: (md) => {
