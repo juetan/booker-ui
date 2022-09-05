@@ -1,9 +1,7 @@
 <br/>
 
 <p align="center">
-  <a href="https://vite-ui-practice.vercel.app/">
-    <img src="https://user-images.githubusercontent.com/36595085/188433793-d42eaaca-2fef-4c80-bfce-36b5ecf58e90.png" alt="Slidev" height="200" width="200"/>
-  </a>
+  <img src="https://user-images.githubusercontent.com/36595085/188433793-d42eaaca-2fef-4c80-bfce-36b5ecf58e90.png" alt="Slidev" height="200" width="200"/>
 </p>
 
 <p align="center">
@@ -11,11 +9,11 @@
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/npm/l/booker-ui" />
-<img src="https://img.shields.io/bundlephobia/min/booker-ui" />
-<img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/CI?label=test" />
-<img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/Publish%20Booker-UI%20To%20Npm" />
-<img src="https://img.shields.io/npm/v/booker-ui" />
+  <img src="https://img.shields.io/npm/l/booker-ui" />
+  <img src="https://img.shields.io/bundlephobia/min/booker-ui" />
+  <img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/CI?label=test" />
+  <img src="https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/Publish%20Booker-UI%20To%20Npm" />
+  <img src="https://img.shields.io/npm/v/booker-ui" />
 </p>
 
 ## 技术栈
