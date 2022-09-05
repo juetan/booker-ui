@@ -1,5 +1,21 @@
-## 介绍
+
+<p align="center">
+  <a href="https://vite-ui-practice.vercel.app/">
+    <img src="https://user-images.githubusercontent.com/36595085/188432123-b9d44605-5eb8-47a5-abc8-6624fa510b34.png" alt="Slidev" height="250" width="250"/>
+  </a>
+</p>
+
+<p align="center">
 基于 Vite 的组件库开发实践，包含项目启动，组件文档，代码规范，单元测试和自动部署等内容。
+</p>
+
+<p align="center">
+![](https://img.shields.io/npm/l/booker-ui)
+![](https://img.shields.io/bundlephobia/min/booker-ui)
+![](https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/CI?label=test)
+![](https://img.shields.io/github/workflow/status/juetan/vite-ui-practice/Publish%20Booker-UI%20To%20Npm)
+![](https://img.shields.io/npm/v/booker-ui)
+</p>
 
 ## 技术栈
 - Vite
