@@ -10,14 +10,14 @@ title: 部署
 }
 ```
 2. 登录npm
-```s
+```
 npm login
 ```
 3. 发布代码
-```s
+```
 npm publish
 ```
 4. 访问代码
-```s
+```
 https://www.npmjs.com/package/booker-ui
 ```

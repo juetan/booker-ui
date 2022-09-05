@@ -2,7 +2,7 @@
 title: 组件测试
 ---
 1. 安装以下3个依赖
-```s
+```
 pnpm i vitest happy-dom @vue/test-utils -D
 ```
 2. 修改`/vite.config.ts`文件，添加测试配置
@@ -46,6 +46,6 @@ describe('Button', () => {
 }
 ```
 5. 运行测试命令，查看测试结果
-```s
+```
 pnpm test
 ```

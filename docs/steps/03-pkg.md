@@ -64,7 +64,7 @@ export default defineConfig({
 
 4. 执行打包命令，会生成`/dist`文件夹
 
-```s
+```
 pnpm build
 ```
 

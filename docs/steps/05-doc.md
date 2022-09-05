@@ -43,7 +43,7 @@ export default defineConfig({
 
 5. 运行启动命令，访问`localhost:5000`
 
-```s
+```
 pnpm docs:dev
 ```
 
@@ -109,7 +109,7 @@ export default themeConfig;
 </div>
 ```
 9. 安装`vitepress-theme-demoblock`，用于组件示例
-```s
+```
 pnpm i vitepress-theme-demoblock@1.0.0-alpha.10 -D
 ```
 10. 修改`/docs/.vitepress/config.ts`文件，使用该插件

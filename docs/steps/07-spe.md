@@ -3,7 +3,7 @@ title: 代码规范
 ---
 
 1. 安装以下依赖，我也不太清楚干啥用的(虽然有别的方法，暂时先这样)
-```s
+```
 pnpm i eslint -D
 # ESLint 专门解析 TypeScript 的解析器
 pnpm i @typescript-eslint/parser -D
@@ -53,7 +53,7 @@ module.exports =   {
 }
 ```
 3. 新建`/.eslintignore`文件，添加忽略文件
-```s
+```
 *.sh
 node_modules
 lib
@@ -79,23 +79,23 @@ dist
 pnpm lint
 ```
 6. 安装`husky`，用于定义`Git Hooks`
-```s
+```
 pnpm i husky -D
 ```
 7. 通过以下命令，添加脚本到`/package.json`文件中
-```s
+```
 npm set-script prepare "husky install"
 ```
 8. 添加Git声明周期钩子
-```s
+```
 mkdir .husky && npx husky add .husky/pre-commit "pnpm run lint"
 ```
 9. 测试是否有效
-```s
+```
 git commit -m "feat: commint for lint test"
 ```
 10. 执行命令，添加测试钩子
-```s
+```
 npx husky add .husky/pre-push "pnpm test:run"
 ```
 11. 修改`/package.json`文件
@@ -107,7 +107,7 @@ npx husky add .husky/pre-push "pnpm test:run"
 }
 ```
 12. 安装以下依赖，用于检测提交信息
-```s
+```
 # 安装commitlint
 pnpm i -d @commitlint/config-conventional@"17.0.2" @commitlint/cli@"17.0.2"
 
@@ -115,6 +115,6 @@ pnpm i -d @commitlint/config-conventional@"17.0.2" @commitlint/cli@"17.0.2"
 echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
 ```
 13. 执行命令，添加测试钩子
-```s
+```
 npx husky add .husky/commit-msg "npx --no -- commitlint --edit \"$1\""
 ```

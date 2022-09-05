@@ -4,19 +4,19 @@ title: 组件环境
 
 1. 新建文件夹
 
-```s
+```
 mkdir vite-ui && cd vite-ui
 ```
 
 2. 初始化项目
 
-```s
+```
 pnpm init -y(optional)
 ```
 
 3. 安装 Vite
 
-```s
+```
 pnpm i vite@latest -D
 ```
 
@@ -36,7 +36,7 @@ pnpm i vite@latest -D
 
 5. 启动 Vite，访问`localhost:5173`测试是否访问正常
 
-```s
+```
 npx vite
 ```
 

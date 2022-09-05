@@ -4,7 +4,7 @@ title: 组件开发
 
 1. 安装 Vue，添加对 Vue 的支持
 
-```s
+```
 pnpm i vue -D
 ```
 
@@ -81,7 +81,7 @@ declare module ".vue" {
 
 9. 安装`@vitejs/plugin-vue-jsx`，添加`.[t|j]sx`文件的支持
 
-```s
+```
 pnpm i @vitejs/plugin-vue-jsx -D
 ```
 

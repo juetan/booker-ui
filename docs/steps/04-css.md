@@ -243,7 +243,7 @@ export default defineConfig({
 
 12. 运行打包命令，`/dist`目录下会生成`assets/entry.xxx.css`
 
-```s
+```
 pnpm build
 ```
 
