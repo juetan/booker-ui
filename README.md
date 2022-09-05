@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/npm/v/booker-ui" />
 </p>
 
-## 技术栈
+## 功能
 - ⚡ 基于Vite+Vue3，快速开发和构建强壮的应用
 - 🎨 使用原子化CSS构建方案
 - ✨ 使用Vitest作为测试框架，保障功能稳定性  
