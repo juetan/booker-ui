@@ -930,7 +930,35 @@ npm set-script prepare "husky install"
 ```
 8. 添加Git声明周期钩子
 ```s
-mkdir .husky && npx husky add .husky/pre-commit "pnpm lint"
+mkdir .husky && npx husky add .husky/pre-commit "pnpm run lint"
+```
+9. 测试是否有效
+```s
+git commit -m "feat: commint for lint test"
+```
+10. 执行命令，添加测试钩子
+```s
+npx husky add .husky/pre-push "pnpm test:run"
+```
+11. 修改`/package.json`文件
+```json
+{
+  "scripts": {
+    "test:run": "vitest run",
+  }
+}
+```
+12. 安装以下依赖，用于检测提交信息
+```s
+# 安装commitlint
+pnpm i -d @commitlint/config-conventional@"17.0.2" @commitlint/cli@"17.0.2"
+
+# Configure commitlint to use conventional config
+echo "module.exports = {extends: ['@commitlint/config-conventional']}" > commitlint.config.js
+```
+13. 执行命令，添加测试钩子
+```s
+npx husky add .husky/commit-msg "npx --no -- commitlint --edit \"$1\""
 ```
 
 ### 部署
@@ -943,15 +971,15 @@ mkdir .husky && npx husky add .husky/pre-commit "pnpm lint"
 }
 ```
 2. 登录npm
-```
+```s
 npm login
 ```
 3. 发布代码
-```
+```s
 npm publish
 ```
 4. 访问代码
-```
+```s
 https://www.npmjs.com/package/booker-ui
 ```
 

@@ -46,7 +46,6 @@ export default defineComponent({
       hover:bg-${props.color}-700
       border-none
       rounded
-      font-semibold
       cursor-pointer
     `}
       >
