@@ -1,7 +1,8 @@
+<br/>
 
 <p align="center">
   <a href="https://vite-ui-practice.vercel.app/">
-    <img src="https://user-images.githubusercontent.com/36595085/188432123-b9d44605-5eb8-47a5-abc8-6624fa510b34.png" alt="Slidev" height="250" width="250"/>
+    <img src="https://user-images.githubusercontent.com/36595085/188433793-d42eaaca-2fef-4c80-bfce-36b5ecf58e90.png" alt="Slidev" height="200" width="200"/>
   </a>
 </p>
 
