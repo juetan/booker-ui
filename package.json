@@ -1,10 +1,18 @@
 {
   "name": "booker-ui",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A simple lib based on vite and vue!",
+  "homepage": "https://github.com/juetan/vite-ui-practice",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juetan/vite-ui-practice"
+  },
   "main": "./dist/vite-ui.umd.js",
   "module": "./dist/vite-ui.mjs",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "types": "dist/entry.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -43,6 +51,7 @@
     "typescript": "^4.8.2",
     "unocss": "^0.45.13",
     "vite": "^3.0.9",
+    "vite-plugin-dts": "^1.4.1",
     "vitepress": "1.0.0-alpha.10",
     "vitepress-theme-demoblock": "^1.4.2",
     "vitest": "^0.22.1",

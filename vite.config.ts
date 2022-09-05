@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import jsx from "@vitejs/plugin-vue-jsx";
 import css from "./config/unocss";
+import dts from "vite-plugin-dts";
 
 const rollupOptions = {
   external: ["vue", "vue-router"],
@@ -14,7 +15,7 @@ const rollupOptions = {
 };
 
 export default defineConfig({
-  plugins: [vue(), jsx(), css()],
+  plugins: [vue(), jsx(), css(), dts()],
   build: {
     rollupOptions,
     minify: false,
