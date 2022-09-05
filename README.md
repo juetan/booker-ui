@@ -17,9 +17,12 @@
 </p>
 
 ## 技术栈
-- Vite
-- Typescript
-- Vue
+- ⚡ 基于Vite+Vue3，快速开发和构建强壮的应用
+- 🎨 使用原子化CSS构建方案
+- ✨ 使用Vitest作为测试框架，保障功能稳定性  
+- 🔖 使用Typescript，提供静态类型检查和类型提示
+- 💎 使用Github Action持续集成，自动部署和发布
+- 🎲 使用Husky和Eslint检查代码规范，保障良好的代码样式
 
 ## 快速开始
 1. 安装依赖
